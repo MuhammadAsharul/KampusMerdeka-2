@@ -1,0 +1,96 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+form {
+    border: 2px solid #00486a;
+    padding: 10px;
+    margin: 100px 500px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.satu {
+    padding: 8px;
+    border: 2px solid coral;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #00486a;
+}
+
+.dua {
+    width: 81%;
+    padding: 8px;
+    border: 2px solid coral;
+    border-radius: 5px;
+    margin: 8px;
+}
+
+select {
+    padding: 3px;
+    border: 2px solid coral;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+#tanggal,
+#tahun {
+    width: 20%;
+    padding: 5px;
+}
+
+
+#bulan {
+    width: 43%;
+    padding: 5px;
+}
+
+.label1 {
+    font-size: 12px;
+    margin-left: -350px;
+}
+
+.label2 {
+    font-size: 12px;
+    margin-left: -380px;
+}
+
+.label3 {
+    font-size: 10px;
+    color: blueviolet;
+}
+
+#submit {
+    width: 200px;
+    margin-top: 20px;
+    color: white;
+    background-color: #00486a;
+    padding: 10px 20px;
+    border: 2px solid coral;
+    border-radius: 10px;
+}
+
+#submit:hover {
+    background-color: white;
+    color: #00486a;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.jenis {
+    height: 20px;
+    width: 40%;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 10px auto;
+    display: inline-block;
+    border: 2px solid coral;
+}
+
+.jenis .per {
+    margin-left: 20px;
+}
