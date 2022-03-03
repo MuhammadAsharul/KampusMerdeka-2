@@ -1,0 +1,64 @@
+<script>
+    document.write("--------------------cetak angka 1 s/d 30 (while)--------------------");
+    let angka = 1 ;
+    while (angka <= 30) {
+        document.write("<br>No. "+angka);
+        angka=angka +2 ;
+    }
+    document.write("<br>--------------------cetak angka 30 s/d 1 (while)--------------------");
+    let p = 30;
+    while (p>=1) {
+        document.write("<br>No. "+p);
+        p=p-2;        
+    }
+    // break continue
+    document.write("<br>--------------------cetak angka 1 s/d 30 (continue dan break)--------------------");
+    let r = 30;
+    while(r>=1){
+        if (r==25) {
+            r--;
+            continue;
+        }
+        if(r==15){
+            r--;
+            break;
+        }
+        document.write("<br>No. "+r);
+        r--;
+    }
+    document.write("<hr> ");
+    document.write("<br>--------------------cetak angka 30 s/d 1 (looping while button)--------------------");
+    document.write("<br>");
+    let nomer = 1;
+    while(nomer <= 5){
+        document.write("<input type='radio' value="+nomer+" name='test'>"+nomer);
+        
+        nomer++;
+        }
+    document.write("<hr>");
+    const buah2an =["apel ","jeruk ","anggur ","mangga"];
+
+    document.write(`<br>${buah2an}`);
+    // merubah array
+    buah2an[1] = "pepaya";
+    document.write(`<br>${buah2an[1]}`);
+    // delete sebagian
+    // delete buah2an[2];
+    buah2an.splice(2,1);
+    // delete variabel array
+    // delete buah2an;
+    //buah2an.remove();
+    // tambah buahuahan baru
+    buah2an.push("pisang ","semangka ","melon");
+    document.write(`<br>${buah2an}`);//jadi tidak bisa dijalankan
+    document.write(`<br>${buah2an[4]}`);
+    document.write(`<br>${buah2an[5]}`);
+    document.write(`<br>${buah2an[6]}`);
+    
+    document.write("<hr> <br>");
+    document.write("For In")
+    let buah = ["apel","jeruk","anggur","mangga"];
+    for(let i in buah){
+        document.write("<br>Buah ke-"+i+" adalah "+buah[i]);
+    }
+    </script>

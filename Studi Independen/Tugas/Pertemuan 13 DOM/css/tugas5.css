@@ -1,0 +1,70 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+form {
+    border: 2px solid #00486a;
+    padding: 30px;
+    margin: 20px 750px;
+    box-sizing: border-box;
+    background-color: rgba(252, 252, 252, 0.589);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 450px;
+}
+
+
+.nama,
+.produk,
+.jumlah {
+    font-size: 16px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.nama label,
+.produk label,
+.jumlah label {
+    text-align: left;
+    font-weight: 500;
+}
+
+input[type=text],
+input[type=number] {
+    padding: 10px;
+    border: none;
+    background: #f1f1f1;
+}
+
+.produk select {
+    border-radius: 0;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=button] {
+    margin-top: 20px;
+    background-color: #00486a;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 0;
+}
+
+input[type=button]:hover {
+    background-color: rgb(235, 235, 235);
+    color: coral;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #00486a;
+    border-radius: 0;
+    cursor: pointer;
+}
