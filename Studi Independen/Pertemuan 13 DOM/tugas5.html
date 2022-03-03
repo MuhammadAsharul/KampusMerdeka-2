@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Online Amanah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="1.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/tugas5.css">
+</head>
+<body background="2.jpg">
+    <img src="chicken.png" alt="" width="80px" style="margin-top: 100px;">
+    <h1 style="color: white;">Toko Online Amanah</h1>
+    <form action="" id="formulir">
+        <div class="nama">
+            <!-- nama -->
+        <label for="">Nama</label>
+        <input type="text" name="nama" value="">
+        </div>
+        <div class="produk">
+            <!-- produk -->
+        <label for="">Produk</label>
+        <select name="produk"  value="">
+            <script>
+                const produk = ['Televisi','Air Conditioner','Kulkas'];
+                for(let prd of Object.keys(produk)){
+                let data = produk[prd];
+                document.write(`<option value="${data}">${data}</option>`);
+            }
+            </script> 
+        </select>
+        </div>
+        <div class="jumlah">
+            <!-- jumlah -->
+        <label for="">Jumlah</label>
+        <input type="number" name="jumlah" value="">
+        </div>
+        <input type="button" onclick="transaksi()" name="proses" value="Transaksi">
+    </form>
+    <script lang="javascript" src="js/tugas5.js">
+
+    </script>
+</body>
+</html>

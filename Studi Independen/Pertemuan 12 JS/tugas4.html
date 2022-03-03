@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 4</title>
+    <style>
+        *{
+            font-family: 'Roboto', sans-serif;
+        }
+        td{
+            font-size:15px;	
+        }
+    </style>
+</head>
+<body>
+    <h3 align="center">
+        Daftar Karyawan
+    </h3>
+    <script>
+        // array assosiatif karyawan
+        const karyawan = {
+            'Budi' : 'Manager',
+            'Siti' : 'Manager',
+            'Andi' : 'Kabag',
+            'Deden': 'Asisten Manager',
+            'Wawan': 'Staff',
+            'Mimin': 'Staff'
+        }
+        // array numerik judul
+        const judul = ['No', 'Nama', 'Jabatan', 'Gaji Pokok','Tunjangan Jabatan','Total Gaji'];
+    </script>
+    <table cellpadding="15" cellspacing="0" align="center">
+        <thead>
+            <tr>
+                <script>
+                    // perulangan dengan for of
+                    for(jdl of Object.keys(judul)){
+                        document.write(`<th bgcolor='#4C5270' style="color: white;" align="center">${judul[jdl]}</th>`);
+                    }
+                    // perulangan dengan for in
+                    // for(jdl in judul){
+                    //     document.write(`<th bgcolor='#4C5270' style="color: white;" align="center">${judul[jdl]}</th>`);
+                    // }
+                </script>
+            </tr>
+        </thead>
+        <tbody>
+            <script>
+                let no =1;
+                // perulangan for of
+                for(let data of Object.keys(karyawan)){
+                    let warna = ( no % 2 == 1) ? '#BCECE0' : 'white';
+                    let jabatan = karyawan[data];
+                    switch(jabatan){
+                        case 'Manager':
+                            gapok = 20000000;
+                            break;
+                        case 'Asisten Manager':
+                            gapok = 15000000;
+                            break;
+                        case 'Kabag':
+                            gapok = 10000000;
+                            break;
+                        case 'Staff':
+                            gapok = 5000000;
+                            break;
+                    }
+                    // tunjangan jabatan
+                    tunjab = gapok * 0.2;
+                    // total gaji
+                    gatot = gapok + tunjab;
+                    let grupp = Intl.NumberFormat('id-ID');
+                    document.write(`<tr align="center" bgcolor='${warna}'>
+                        <td>${no++}.</td>
+                        <td>${data}</td>
+                        <td>${jabatan}</td>
+                        <td>Rp. ${grupp.format(gapok)}</td>
+                        <td>Rp. ${grupp.format(tunjab)}</td>
+                        <td>Rp. ${grupp.format(gatot)}</td>`);
+                    }
+            </script>
+        </tbody>
+    </table>
+</body>
+</html>
